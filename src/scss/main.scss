@@ -1,13 +1,64 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+
+
+@import "modules/navigation.scss";
+@import "modules/main.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    background-color:#EDE7E3;
 }
+
+.articleHeader{
+    background-color: #a2aebb;
+}
+h3 {
+    color: #48b3d5;
+}
+h3::after {
+    content: "🍾";
+}
+
+
+
+
+p {
+    color: #553d36;
+}
+p::before{
+    content: "😀 "
+}
+a {
+    color: #000;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+
+
+/* media pod mobile */
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    a {
+        color: #1e221f;
+    }
+    
+    
+    .header {
+        background-color: wheat;
+        min-height: 220px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+
+}
+

@@ -1,0 +1,14 @@
+.main {
+    /* max-width: 1000px; */
+    margin: 160px auto 0;
+    &Header {
+        color: #36151e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 640px) {
+        margin-top: 250px;
+    }
+}
+
